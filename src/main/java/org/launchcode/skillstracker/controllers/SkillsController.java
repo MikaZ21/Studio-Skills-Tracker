@@ -35,28 +35,28 @@ public class SkillsController {
                                 "<br><label>My Favorite Language:" +
                                 "<br><select name='language1' id='fav-lang'>" +
                                     "<option value='select'>--Select--</option>" +
-                                    "<option value='javascript'>JavaScript</option>" +
-                                    "<option value='java'>Java</option>" +
-                                    "<option value='css'>CSS</option>" +
-                                    "<option value='python'>Python</option>" +
+                                    "<option value='JavasScript'>JavaScript</option>" +
+                                    "<option value='Java'>Java</option>" +
+                                    "<option value='CSS'>CSS</option>" +
+                                    "<option value='Python'>Python</option>" +
                                 "</select>" +
                             "</label>" +
                             "<br><label>My Second Favorite Language:" +
                                 "<br><select name='language2' id='second-lang'>" +
                                     "<option value='select'>--Select--</option>" +
-                                    "<option value='javascript'>JavaScript</option>" +
-                                    "<option value='java'>Java</option>" +
-                                    "<option value='css'>CSS</option>" +
-                                    "<option value='python'>Python</option>" +
+                                    "<option value='JavaScript'>JavaScript</option>" +
+                                    "<option value='Java'>Java</option>" +
+                                    "<option value='CSS'>CSS</option>" +
+                                    "<option value='Python'>Python</option>" +
                                 "</select>" +
                             "</label>" +
                             "<br><label>My Third Favorite Language:" +
                                 "<br><select name='language3' id='third-lang'>" +
                                     "<option value='select'>--Select--</option>" +
-                                    "<option value='javascript'>JavaScript</option>" +
-                                    "<option value='java'>Java</option>" +
-                                    "<option value='css'>CSS</option>" +
-                                    "<option value='python'>Python</option>" +
+                                    "<option value='JavaScript'>JavaScript</option>" +
+                                    "<option value='Java'>Java</option>" +
+                                    "<option value='CSS'>CSS</option>" +
+                                    "<option value='Python'>Python</option>" +
                                 "</select>" +
                             "</label>" +
                             "<br><input type='submit' value='Submit!'>" +
@@ -71,11 +71,27 @@ public class SkillsController {
                 "<h1>" + name + "</h1>" +
                 "<h2>List of Favorite Languages</h2>" +
                     "<body>" +
-                        "<ol>" +
-                            "<li>" + language1 + "</li>" +
-                            "<li>" + language2 + "</li>" +
-                            "<li>" + language3 + "</li>" +
-                        "</ol>" +
+//                        "<ol>" +
+//                            "<li>" + language1 + "</li>" +
+//                            "<li>" + language2 + "</li>" +
+//                            "<li>" + language3 + "</li>" +
+//                        "</ol>" +
+
+                //Bonus Missions: Reformat form page to use a table
+                        "<table border='2'>" +
+                            "<tr>" +
+                                "<td>Most Favorite" + "</td>" +
+                                "<td>" + language1 + "</td>" +
+                            "</tr>" +
+                            "<tr>" +
+                                "<td>Second Favorite" + "</td>" +
+                                "<td>" + language2 + "</td>" +
+                            "</tr>" +
+                            "<tr>" +
+                                "<td>Third Favorite" + "</td>" +
+                                "<td>" + language3 +  "</td>" +
+                            "</tr>" +
+                        "</table>" +
                     "</body>" +
                 "</html>";
     }
